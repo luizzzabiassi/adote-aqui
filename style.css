@@ -1,0 +1,110 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #f8edeb;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 2px;
+}
+  
+.logo{
+    margin-left: 40px;
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+    justify-content: center;
+}
+  
+.logo h1:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    color: #fec5bb;
+}
+  
+#menu ul{
+    justify-content: center;
+    display: flex;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+#menu ul li{
+    display: inline;
+}
+  
+#menu ul li a{
+    color: black;
+    display: inline-block;
+    padding: 10px;
+    font-size: 16px;
+}
+  
+#menu ul li a:hover{
+    font-size: 18px;
+    background-color: #fec5bb;
+    color: white;
+}
+  
+.imagem{
+    display: flex;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+  
+.imagem img{
+    height: 370px;
+    border: 5px solid white;
+}
+  
+.imagem img:hover{
+    cursor: pointer;
+    border: none;
+}
+  
+.imagem > div{
+    margin-bottom: 24px;
+    flex: 1px;
+    text-align: center;
+}
+
+.titulo{
+    font-size: 18px;
+    margin: 0;
+}
+
+.descricao{
+    font-size: 16px;
+    margin: 0;
+}
+  
+footer{
+    font-weight: bold;
+    text-align: center;
+    background-color: white;
+    padding: 5px;
+    color: rgb(12, 12, 12);
+    font-size: 14px;
+}
+  
+@media only screen and (max-width: 700px){
+    .logo{
+        display: none;
+    }
+  
+    #menu ul{
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+  
+    #menu ul li a{
+        display: block;
+        width: 100%;
+    }
+}
