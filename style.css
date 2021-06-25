@@ -6,14 +6,12 @@ body{
 .container{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     font-size: 12px;
+    margin: 0 auto;
     text-transform: uppercase;
-    margin: 2px;
 }
   
 .logo{
-    margin-left: 40px;
     font-size: 14px;
     color: black;
     text-align: center;
@@ -26,11 +24,10 @@ body{
     transform: scale(1.1);
     color: #fec5bb;
 }
-  
+
 #menu ul{
-    justify-content: center;
     display: flex;
-    margin: 3px;
+    justify-content: center;
     border-radius: 5px;
 }
 
@@ -40,7 +37,6 @@ body{
   
 #menu ul li a{
     color: black;
-    display: inline-block;
     padding: 10px;
     font-size: 16px;
 }
@@ -50,7 +46,7 @@ body{
     background-color: #fec5bb;
     color: white;
 }
-  
+
 .imagem{
     display: flex;
     padding: 15px;
@@ -58,8 +54,10 @@ body{
 }
   
 .imagem img{
+    width: 245px;
     height: 370px;
     border: 5px solid white;
+    margin: 15px;
 }
   
 .imagem img:hover{
@@ -91,8 +89,8 @@ footer{
     color: rgb(12, 12, 12);
     font-size: 14px;
 }
-  
-@media only screen and (max-width: 700px){
+
+@media only screen and (max-width: 650px){
     .logo{
         display: none;
     }
@@ -106,5 +104,11 @@ footer{
     #menu ul li a{
         display: block;
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .imagem{
+        flex-direction: column;
     }
 }
